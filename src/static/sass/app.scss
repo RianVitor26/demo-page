@@ -1,10 +1,4 @@
-@import "core/reset";
-@import "abstract/mixins";
-@import "core/base";
-@import "abstract/variables";
-@import "core/typography";
-@import "components/navigation";
-@import "components/slider";
-@import "components/buttons";
-@import "components/carousel";
-
+@import 'core/glob';
+@import 'abstract/glob';
+@import 'layout/glob';
+@import 'components/glob';

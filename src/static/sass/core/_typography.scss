@@ -1,5 +1,8 @@
+
 // Use the function clamp
 
-h1{
-    color: $secondary-color-font;
+.logo,
+.nav-list .nav-item a{
+    font-size: clamp(18px, 1.5vw, 40px);
+    font-family: sans-serif;
 }
