@@ -4,5 +4,17 @@
 .logo,
 .nav-list .nav-item a{
     font-size: clamp(18px, 1.5vw, 40px);
-    font-family: sans-serif, serif, verdana, helvetica;
 }
+
+.header-title{
+    color: $main-color-font;   
+    font-size: clamp(40px, 10vw,  200px);
+    padding: 30vh 10vw 0 10vw;
+}
+
+.header-description{
+    color: $main-color-font;
+    font-size: clamp(14px, 2vw,  70px);
+    padding: 0 10vw;
+}
+

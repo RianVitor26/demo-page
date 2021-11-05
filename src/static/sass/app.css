@@ -8,6 +8,8 @@
 body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+  font-family: sans-serif, serif, verdana, helvetica;
 }
 
 li {
@@ -21,10 +23,30 @@ a {
 .logo,
 .nav-list .nav-item a {
   font-size: clamp(18px, 1.5vw, 40px);
-  font-family: sans-serif, serif, verdana, helvetica;
 }
 
-.header {
+.header-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(40px, 10vw, 200px);
+  padding: 30vh 10vw 0 10vw;
+}
+
+.header-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(14px, 2vw, 70px);
+  padding: 0 10vw;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.w3schools.com/w3images/jane.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+main {
   width: 100%;
 }
 
@@ -43,7 +65,8 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #1a237e;
+  position: fixed;
+  background: #000000e0;
 }
 
 .logo {
@@ -114,7 +137,7 @@ button {
     transition: all .5s ease;
     overflow-y: hidden;
     z-index: 1000;
-    background: #1a237e;
+    background: #000000e0;
   }
   .nav-list .nav-item {
     padding: 0;
@@ -130,6 +153,9 @@ button {
   }
   .nav-list.active .nav-item {
     opacity: 1;
+  }
+  .header-content-wrapper {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=app.css.map */
