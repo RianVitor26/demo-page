@@ -1,26 +1,40 @@
 // TABLETS
-@media only screen and (max-width: 769px){
-    .nav-list{
-        position: absolute;
-        right: 0;
-        top: 10vh;
-        width: 50vw;
-        height: calc(100vh - 10vh);    
-        flex-direction: column;
-        @include flexEvenly;
-
-        background: $main-color;
-    }
-
-    .nav-list .nav-item{
-        opacity: 0;
-    }
-
-    .nav-list .nav-item a{  
-        padding: 0;
-    }
-
+@media only screen and (max-width: 769px){  
     .mobile-menu{
         display: block;
     }
+
+    .nav-list{
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 100vw; 
+        height: 0;  
+        flex-direction: column;
+        justify-content: space-around;
+        transition: all .5s ease;
+        overflow-y: hidden;
+        z-index: 1000;
+
+        background: $main-color;
+
+        .nav-item{
+            padding: 0;
+            opacity: 0;
+            transition: all .5s ease
+        }
+    }
+
+    .nav-list.active{
+        visibility: visible;
+        height: calc(100vh - 10vh);
+        transition: all .5s ease-in-out;
+
+        .nav-item{
+            opacity: 1;
+        }
+    }
+
+    
 }

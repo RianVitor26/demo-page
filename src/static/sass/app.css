@@ -6,7 +6,8 @@
 }
 
 body {
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 li {
@@ -20,17 +21,17 @@ a {
 .logo,
 .nav-list .nav-item a {
   font-size: clamp(18px, 1.5vw, 40px);
-  font-family: sans-serif;
+  font-family: sans-serif, serif, verdana, helvetica;
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
   width: 100%;
   height: 10vh;
-  padding: 0 15px;
+  padding: 0 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +43,6 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
   background: #1a237e;
 }
 
@@ -76,7 +76,7 @@ a {
 
 .nav-list .nav-item a {
   display: block;
-  padding: 10px;
+  padding: 2vh 2vw;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   color: rgba(255, 255, 255, 0.7);
@@ -94,35 +94,42 @@ button {
 }
 
 @media only screen and (max-width: 769px) {
+  .mobile-menu {
+    display: block;
+  }
   .nav-list {
+    visibility: hidden;
     position: absolute;
     right: 0;
     top: 10vh;
-    width: 50vw;
-    height: calc(100vh - 10vh);
+    width: 100vw;
+    height: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    overflow-y: hidden;
+    z-index: 1000;
     background: #1a237e;
   }
   .nav-list .nav-item {
-    opacity: 0;
-  }
-  .nav-list .nav-item a {
     padding: 0;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
   }
-  .mobile-menu {
-    display: block;
+  .nav-list.active {
+    visibility: visible;
+    height: calc(100vh - 10vh);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .nav-list.active .nav-item {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=app.css.map */
