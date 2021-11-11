@@ -40,3 +40,8 @@
         text-align: center;
     }
 }
+@media only screen and (max-width: 426px){
+    #slide-section .content{
+        height: 400px;
+    }
+}

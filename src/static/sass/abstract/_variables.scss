@@ -1,18 +1,14 @@
 // Colors definition
-$background-color: #fafafa;
-$main-color: #070707e0;
-$secondary-background: rgb(24, 24, 24);
+$primary-background: #202a4b;
+$secondary-background: #171e36;
+$main-color: #0c1122;
 $main-color-font: rgba(255, 255, 255, 0.7); 
 $secondary-color-font:  rgba(0, 0, 0, 0.9);
-
 //Effects
-
 $default-transition: all ease .5s;
 $card-translate: translate(0, -20px);
-
-
+$card-zoom: scale(110%);
 // Border
-
 $default-radius: 10px;
 
 

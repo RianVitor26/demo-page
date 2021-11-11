@@ -1,19 +1,18 @@
 #slide-section{
     width: 100vw;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
-    background-color:black;
-
+    background-color: $secondary-background;
 }
 
 .content{
-    width: 935px;
-    height: 520px;
+    width: 60vw;
+    min-width: 280px;
+    height: 80vh;
     border-radius: 20px;
     overflow: hidden;
-    margin: 0 auto;
     position: relative;
+    margin-bottom: 2vh;
 }
 
     .slide-wrapper{
@@ -42,11 +41,13 @@
             @include flexCenter;
     
             .bar{
-                width: 50px;
-                height: 20px;
+                width: 4vw;
+                min-width: 20px;
+                min-height: 10px;
+                height: 4vh;
                 border: 2px solid $main-color-font;
                 border-radius: 10px;
-                margin-right: 10px;
+                margin-right: 3vw;
                 cursor: pointer;
                 transition: $default-transition;
     

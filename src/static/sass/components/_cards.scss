@@ -12,18 +12,30 @@
         min-height: 350px;
         max-height: 500px;
         max-width: 600px;
+        transition: $default-transition;
 
         background-color: $main-color;
         border-radius: $default-radius;
+
+        &:hover{
+            transform: $card-translate;
+
+            .photos-image img{
+                transform: $card-zoom;
+                cursor: zoom-in;
+            }
+        }
         
 
         .photos-image{
             width: 100%;
             height: 80%;
+            overflow: hidden;
         
             img{
                 width: 100%;
                 height: 100%;
+                transition: $default-transition;
             }
         }
 
