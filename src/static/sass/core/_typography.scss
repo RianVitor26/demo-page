@@ -8,13 +8,29 @@
 
 .header-title{
     color: $main-color-font;   
-    font-size: clamp(40px, 10vw,  200px);
+    font-size: clamp(20px, 10vw,  200px);
     padding: 30vh 10vw 0 10vw;
 }
 
 .header-description{
     color: $main-color-font;
-    font-size: clamp(14px, 2vw,  70px);
+    font-size: clamp(20px, 2vw,  70px);
     padding: 0 10vw;
+}
+
+
+
+.photos-title, 
+.slide-title{
+    font-size: clamp(20px, 3vw, 70px);
+    text-align: center;
+    padding: 10vh 0;
+    color: $main-color-font;
+}
+
+.photos-description p{
+    font-size: clamp(16px, 1vw, 70px);
+    padding: 3vh 3vw;
+    color: $main-color-font;
 }
 

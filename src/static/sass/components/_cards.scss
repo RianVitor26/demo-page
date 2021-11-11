@@ -1,0 +1,40 @@
+.photos-container{
+    width: 100%;
+    @include flexEvenly;
+    flex-wrap: wrap;
+
+    .photos-card{
+        width: 30vw;
+        height: 60vh;
+        margin: 2vw;
+        overflow: hidden;
+        min-width: 270px;
+        min-height: 350px;
+        max-height: 500px;
+        max-width: 600px;
+
+        background-color: $main-color;
+        border-radius: $default-radius;
+        
+
+        .photos-image{
+            width: 100%;
+            height: 80%;
+        
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .photos-description{
+            height: 20%;
+            @include flexCenter;
+        }
+    }
+}
+
+
+
+
+

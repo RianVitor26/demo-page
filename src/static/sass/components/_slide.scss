@@ -1,0 +1,7 @@
+.slide-wrapper{
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+    @include flexCenter;
+}

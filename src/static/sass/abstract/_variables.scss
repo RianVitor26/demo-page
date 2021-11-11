@@ -1,7 +1,7 @@
 // Colors definition
 $background-color: #fafafa;
-$main-color: #000000e0;
-$secondary-color: #e65100;
+$main-color: #070707e0;
+$secondary-background: rgb(24, 24, 24);
 $main-color-font: rgba(255, 255, 255, 0.7); 
 $secondary-color-font:  rgba(0, 0, 0, 0.9);
 
@@ -9,5 +9,10 @@ $secondary-color-font:  rgba(0, 0, 0, 0.9);
 
 $default-transition: all ease .5s;
 $card-translate: translate(0, -20px);
+
+
+// Border
+
+$default-radius: 10px;
 
 
