@@ -5,6 +5,7 @@
     @include flexBetween;
     flex-wrap: wrap;
     position: fixed;
+    z-index: 1000;
 
 
     background: $main-color;        
