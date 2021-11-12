@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -29,7 +33,7 @@ a {
 .header-title {
   color: rgba(255, 255, 255, 0.7);
   font-size: clamp(20px, 10vw, 200px);
-  padding: 30vh 10vw 0 10vw;
+  padding: 30vh 10vw 5vh 10vw;
 }
 
 .header-description {
@@ -47,8 +51,9 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.photos-description p {
-  font-size: clamp(16px, 1vw, 70px);
+.photos-description p,
+.text-container .text {
+  font-size: clamp(16px, 1.3vw, 50px);
   padding: 3vh 3vw;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -216,6 +221,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #171e36;
+  padding-bottom: 20vh;
 }
 
 .content {
@@ -305,6 +311,71 @@ main {
   margin-left: -80%;
 }
 
+.grid-section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #202a4b;
+}
+
+.grid-wrapper {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 5vh;
+  height: 100%;
+}
+
+.grid-wrapper .grid-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 5vh 0;
+}
+
+.grid-wrapper .grid-content:nth-child(even) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.grid-wrapper .grid-content .image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-wrapper .grid-content .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.grid-wrapper .grid-content .text-container {
+  width: 100%;
+  height: 30%;
+}
+
+.grid-wrapper .grid-content .text-container .text {
+  padding: 1vh 3vw;
+}
+
 @media only screen and (max-width: 769px) {
   .mobile-menu {
     display: block;
@@ -345,6 +416,18 @@ main {
   }
   .header-content-wrapper {
     text-align: center;
+  }
+  .grid-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0;
+  }
+  .grid-wrapper .grid-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

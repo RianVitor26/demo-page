@@ -6,7 +6,7 @@
 .header-title{
     color: $main-color-font;   
     font-size: clamp(20px, 10vw,  200px);
-    padding: 30vh 10vw 0 10vw;
+    padding: 30vh 10vw 5vh 10vw;
 }
 .header-description{
     color: $main-color-font;
@@ -22,8 +22,9 @@
     padding: 10vh 0;
     color: $main-color-font;
 }
-.photos-description p{
-    font-size: clamp(16px, 1vw, 70px);
+.photos-description p,
+.text-container .text{
+    font-size: clamp(16px, 1.3vw, 50px);
     padding: 3vh 3vw;
     color: $main-color-font;
 }

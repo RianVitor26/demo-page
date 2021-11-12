@@ -39,6 +39,16 @@
     .header-content-wrapper{
         text-align: center;
     }
+
+    .grid-wrapper{
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin: 0;
+
+        .grid-content{
+            flex-direction: column;
+         }
+    }
 }
 @media only screen and (max-width: 426px){
     #slide-section .content{
