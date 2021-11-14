@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 5vh;
 }
 
 body{
@@ -7,7 +8,8 @@ body{
     height: 100vh;
     overflow-x: hidden;
     font-family: sans-serif, serif, verdana, helvetica;
-    background: slateblue;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 li{

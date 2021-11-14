@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5vh;
 }
 
 body {
@@ -14,7 +15,10 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: sans-serif, serif, verdana, helvetica;
-  background: slateblue;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 li {
@@ -491,7 +495,7 @@ main {
   padding: 1vh 3vw;
 }
 
-.form-wrapper {
+#form-wrapper {
   width: 100%;
   height: 90vh;
   display: -webkit-box;
@@ -506,7 +510,7 @@ main {
   background: #171e36;
 }
 
-.form-wrapper .form-container {
+#form-wrapper .form-container {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   height: 80%;
@@ -527,7 +531,7 @@ main {
           flex-direction: column;
 }
 
-.form-wrapper .form-container form {
+#form-wrapper .form-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,13 +549,13 @@ main {
   height: 30%;
 }
 
-.form-wrapper .form-container form label {
+#form-wrapper .form-container form label {
   width: 100%;
   text-align: center;
   position: relative;
 }
 
-.form-wrapper .form-container form label input[type="text"], .form-wrapper .form-container form label input[type="password"] {
+#form-wrapper .form-container form label input[type="text"], #form-wrapper .form-container form label input[type="password"] {
   border: none;
   border-radius: 10px;
   padding: 2vh 2vw;
@@ -560,7 +564,7 @@ main {
   width: 80%;
 }
 
-.form-wrapper .form-container form input[type="submit"] {
+#form-wrapper .form-container form input[type="submit"] {
   border-radius: 10px;
   width: 80%;
   padding: 1vh 1vw;
@@ -573,13 +577,13 @@ main {
   transition: all ease 0.5s;
 }
 
-.form-wrapper .form-container form input[type="submit"]:hover {
+#form-wrapper .form-container form input[type="submit"]:hover {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #6a11cb), color-stop(90%, #2575fc));
   background-image: linear-gradient(to right, #6a11cb 30%, #2575fc 90%);
   letter-spacing: 1px;
 }
 
-.form-wrapper .social-wrapper {
+#form-wrapper .social-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,27 +600,27 @@ main {
           flex-direction: column;
 }
 
-.form-wrapper .social-wrapper span {
+#form-wrapper .social-wrapper span {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.form-wrapper .social-wrapper .social-fields {
+#form-wrapper .social-wrapper .social-fields {
   width: 80%;
 }
 
-.form-wrapper .social-wrapper .social-fields .social-field {
+#form-wrapper .social-wrapper .social-fields .social-field {
   border-radius: 10px;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#6a11cb), to(#2575fc));
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
-.form-wrapper .social-wrapper .social-fields .social-field:hover {
+#form-wrapper .social-wrapper .social-fields .social-field:hover {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #6a11cb), color-stop(90%, #2575fc));
   background-image: linear-gradient(to right, #6a11cb 30%, #2575fc 90%);
 }
 
-.form-wrapper .social-wrapper .social-fields .social-field a {
+#form-wrapper .social-wrapper .social-fields .social-field a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,7 +629,7 @@ main {
           align-items: center;
 }
 
-.form-wrapper .social-wrapper .social-fields .social-field.github {
+#form-wrapper .social-wrapper .social-fields .social-field.github {
   margin-bottom: 2vh;
 }
 
