@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    height: calc(50vh - 10vh);
+    background: $main-color;
+    @include flexCenter;
+
+    .footer-container1, .footer-container2{
+        width: 50%;
+        height: 100%;
+        @include flexEvenly;
+        flex-direction: column;
+        color: white;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .icon-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+               i{
+                   margin: 2vw;;
+                   font-size: clamp(30px, 3vw, 100px);
+               }
+            }
+        }
+    }
+}

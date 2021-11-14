@@ -113,6 +113,10 @@ input[type="submit"] {
   font-size: clamp(12px, 1.2vw, 45px);
 }
 
+.footer .footer-container2 p {
+  font-size: clamp(14px, 1.5vw, 45px);
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -129,6 +133,62 @@ main {
 .photos-wrapper {
   width: 100%;
   background: #202a4b;
+}
+
+.footer {
+  width: 100%;
+  height: calc(50vh - 10vh);
+  background: #0c1122;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-container1, .footer .footer-container2 {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.footer .footer-container1 img, .footer .footer-container2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer-container1 .icon-wrapper, .footer .footer-container2 .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-container1 .icon-wrapper a i, .footer .footer-container2 .icon-wrapper a i {
+  margin: 2vw;
+  font-size: clamp(30px, 3vw, 100px);
 }
 
 .container {
@@ -494,31 +554,10 @@ main {
 .form-wrapper .form-container form label input[type="text"], .form-wrapper .form-container form label input[type="password"] {
   border: none;
   border-radius: 10px;
-  background: none;
   padding: 2vh 2vw;
   outline: none;
   height: 5vh;
   width: 80%;
-}
-
-.form-wrapper .form-container form label .underline::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: red;
-  height: 5px;
-  bottom: 0;
-  left: 0;
-}
-
-.form-wrapper .form-container form label .underline::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #0838a0;
-  height: 5px;
-  bottom: 0;
-  left: 0;
 }
 
 .form-wrapper .form-container form input[type="submit"] {
@@ -655,5 +694,9 @@ main {
   .form-form {
     width: 100%;
   }
+}
+
+.footer .footer-container1 {
+  display: none;
 }
 /*# sourceMappingURL=app.css.map */

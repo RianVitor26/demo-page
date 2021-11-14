@@ -3,7 +3,7 @@
     height: 90vh;
     @include flexCenter;
     background: $secondary-background;
-
+    
     .form-container{
         background: $main-color-font;
         border-radius: $default-radius;
@@ -27,26 +27,10 @@
                 input[type="text"], input[type="password"]{
                     border: none;
                     border-radius: $default-radius;
-                    background: none;
                     padding: 2vh 2vw;
                     outline: none;
                     height: 5vh;
                     width: 80%; 
-                }
-
-                .underline::before{
-                    @include pseudo;
-                    background: red;
-                    height: 5px;
-                    bottom: 0;
-                    left: 0;
-                }
-                .underline::after{
-                    @include pseudo;
-                    background: rgb(8, 56, 160);
-                    height: 5px;
-                    bottom: 0;
-                    left: 0;
                 }
             }
 
