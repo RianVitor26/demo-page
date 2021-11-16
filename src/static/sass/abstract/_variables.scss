@@ -1,9 +1,11 @@
 // Colors definition
-$primary-background: #202a4b;
-$secondary-background: #171e36;
-$main-color: #0c1122;
-$main-color-font: rgba(255, 255, 255, 0.7); 
-$secondary-color-font:  rgba(0, 0, 0, 0.9);
+$primary-background: rgb(2, 2, 2);
+$secondary-background: rgb(7, 7, 7);
+$main-color: rgb(0, 0, 0);   
+$main-color-font: rgba(255, 255, 255, 0.671); 
+$secondary-color-font:  rgba(0, 0, 0, 0.8);
+$background-social: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+$background-social-hover: linear-gradient(to right, #6a11cb 30%, #2575fc 90%);
 //Effects
 $default-transition: all ease .5s;
 $card-translate: translate(0, -20px);
