@@ -5,13 +5,13 @@
     background: $secondary-background;
     
     .form-container{
-        background: $main-color-font;
-        border-radius: $default-radius;
-        height: 80%;
         width: 30%;
         min-width: 280px;
+        height: 80%;
         @include flexCenter;
         flex-direction: column;
+        background: $main-color-font;
+        border-radius: $default-radius;
 
         form{
             @include flexEvenly;
@@ -25,26 +25,25 @@
                 position: relative;
 
                 input[type="text"], input[type="password"]{
-                    border: none;
-                    border-radius: $default-radius;
+                    width: 80%; 
+                    height: 5vh;
                     padding: 2vh 2vw;
                     outline: none;
-                    height: 5vh;
-                    width: 80%; 
+                    border: none;
+                    border-radius: $default-radius;
                 }
             }
 
             input[type="submit"]{
-                border-radius: $default-radius;
                 width: 80%;
                 padding: 1vh 1vw;
+                transition: $default-transition;
                 cursor: pointer;
-                border: none;
                 color: $main-color-font;
                 background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-                transition: $default-transition;
-
-
+                border: none;
+                border-radius: $default-radius;
+            
                 &:hover{
                     background-image: linear-gradient(to right, #6a11cb 30%, #2575fc 90%);
                     letter-spacing: 1px;
@@ -65,11 +64,10 @@
         .social-fields{
             width: 80%;
             
-
             .social-field{
-                border-radius: $default-radius;
                 width: 100%;
                 background-image: $background-social;
+                border-radius: $default-radius;
                 
                 &:hover{
                     background-image: $background-social-hover;

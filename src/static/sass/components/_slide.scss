@@ -2,8 +2,8 @@
     width: 100vw;
     @include flexCenter;
     flex-direction: column;
-    background-color: $secondary-background;
     padding-bottom: 20vh;
+    background-color: $secondary-background;
 }
 
 .content{

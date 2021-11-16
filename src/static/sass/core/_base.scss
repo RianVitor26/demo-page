@@ -1,7 +1,4 @@
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 5vh;
-}
+html{ scroll-behavior: smooth; scroll-padding-top: 5vh; }
 
 body{
     width: 100vw;
@@ -10,21 +7,10 @@ body{
     font-family: sans-serif, serif, verdana, helvetica;
 }
 
-li{
-    list-style-type: none;
-}
+li{ list-style-type: none; }
 
-a{
-    text-decoration: none;
-}
+a{ text-decoration: none; }
 
-i{
-    font-size: clamp(20px, 2vw, 50px);
-    margin: 0 2vw;
-    color: $main-color-font;
-}
-
-img{
-    object-fit: cover;
-    object-position: center;
-}
+i{ font-size: clamp(20px, 2vw, 50px); margin: 0 2vw; color: $main-color-font; }
+    
+img{ object-fit: cover; object-position: center; }

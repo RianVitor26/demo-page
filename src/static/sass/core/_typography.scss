@@ -4,16 +4,15 @@
     font-size: clamp(18px, 1.5vw, 40px);
 }
 .header-title{
-    color: $main-color-font;   
     font-size: clamp(20px, 10vw,  200px);
     padding: 30vh 10vw 5vh 10vw;
+    color: $main-color-font;   
 }
 .header-description{
-    color: $main-color-font;
     font-size: clamp(20px, 2vw,  70px);
     padding: 0 10vw;
+    color: $main-color-font;
 }
-
 #photos-title, 
 #slide-title,
 #grid-title{
@@ -30,37 +29,36 @@
     color: $main-color-font;
 }
 
-
 #login-title{
-    text-align: center;
     font-size: clamp(20px, 3vw, 60px);
-    color: $secondary-color-font;
+    text-align: center;
     position: relative;
     margin: 5vh 0; 
+    color: $secondary-color-font;
 
     &:before{
         @include pseudo;
         width: 40%;
         height: .5vh;
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
         bottom: 0;
         left: 0;
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
         border-radius: $default-radius;
     }
 }
 
 .social-field a p{
-    color: $main-color-font;
     font-size: clamp(10px, 1.2vw, 50px);
     padding: 1vh 0;
+    color: $main-color-font;
 }
 
 a small{
     font-size: clamp(10px, 1vw, 40px);
-    text-decoration: underline;
     text-align: end;
-    color: $secondary-color-font;
     transition: .3s;
+    text-decoration: underline;
+    color: $secondary-color-font;
 
     &:hover{
         color: blue;

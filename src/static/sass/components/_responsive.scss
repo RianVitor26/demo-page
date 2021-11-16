@@ -5,18 +5,17 @@
     }
 
     .nav-list{
+        width: 100vw; 
+        height: 0;
         visibility: hidden;
         position: absolute;
         right: 0;
         top: 10vh;
-        width: 100vw; 
-        height: 0;  
         flex-direction: column;
         justify-content: space-around;
         transition: all .5s ease;
         overflow-y: hidden;
         z-index: 1000;
-
         background: $main-color;
 
         .nav-item{
@@ -27,8 +26,8 @@
     }
 
     .nav-list.active{
-        visibility: visible;
         height: calc(100vh - 10vh);
+        visibility: visible;
         transition: all .5s ease-in-out;
 
         .nav-item{

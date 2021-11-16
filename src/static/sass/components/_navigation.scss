@@ -6,8 +6,6 @@
     flex-wrap: wrap;
     position: fixed;
     z-index: 1000;
-
-
     background: $main-color;        
 }
 
@@ -22,7 +20,6 @@
         width: 25px;
         height: 3px;
         margin-top: 5px;
-
         background: $main-color-font;
         border-radius: 10px;
     }
@@ -35,7 +32,6 @@
         display: block;
         padding: 2vh 2vw;
         transition: $default-transition;
-
         color: $main-color-font;
         border-radius: 10px;
 

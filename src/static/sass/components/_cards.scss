@@ -5,16 +5,15 @@
 
     .photos-card{
         width: 30vw;
-        height: 60vh;
-        margin: 2vw;
-        overflow: hidden;
         min-width: 270px;
+        max-width: 600px;
+        height: 60vh;
         min-height: 350px;
         max-height: 500px;
-        max-width: 600px;
+        margin: 2vw;
+        overflow: hidden;
         transition: $default-transition;
-
-        background-color: $main-color;
+        background: $main-color;
         border-radius: $default-radius;
 
         &:hover{
@@ -26,7 +25,6 @@
             }
         }
         
-
         .photos-image{
             width: 100%;
             height: 80%;
